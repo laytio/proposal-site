@@ -1,32 +1,33 @@
+import { useLanguage } from '../i18n/LanguageContext'
+
 export default function Footer() {
-  const year = new Date().getFullYear()
+  const { t } = useLanguage()
+  const f = t('footer')
+
   return (
     <footer className="border-t border-white/10 py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-4">
-          <img
-            src="/hfp-logo.png"
-            alt="Al-Hussein Fellowship — Crown Prince Foundation"
-            className="h-12 w-auto object-contain"
-          />
-          <div className="w-px h-8 bg-white/10" />
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center">
+            <span className="text-white font-bold text-xs">HFP</span>
+          </div>
           <div>
-            <p className="text-white font-semibold text-sm">Digital Sustainability for Jordanian Communities</p>
-            <p className="text-slate-500 text-xs">Project Proposal · Jordan 2026</p>
+            <p className="text-white font-semibold text-sm">{f.name}</p>
+            <p className="text-slate-500 text-xs">{f.sub}</p>
           </div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-6">
-          {['#problem', '#root-cause', '#solution', '#communities', '#impact', '#pitch', '#resources'].map(href => (
+          {f.links.map((href, i) => (
             <a key={href} href={href}
-              className="text-slate-500 hover:text-emerald-400 text-sm capitalize transition-colors">
-              {href.replace('#', '').replace('-', ' ')}
+              className="text-slate-500 hover:text-emerald-400 text-sm transition-colors">
+              {f.linkLabels[i]}
             </a>
           ))}
         </div>
 
         <p className="text-slate-600 text-sm">
-          &copy; {year} All rights reserved.
+          &copy; 2026 {f.copy}
         </p>
       </div>
     </footer>
