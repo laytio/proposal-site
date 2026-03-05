@@ -3,10 +3,14 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center">
-            <span className="text-white font-bold text-sm">DS</span>
-          </div>
+        <div className="flex items-center gap-4">
+          <img
+            src="/hfp-logo.png"
+            alt="Al-Hussein Fellowship — Crown Prince Foundation"
+            className="h-10 w-auto object-contain"
+            style={{ filter: 'brightness(0) invert(1)' }}
+          />
+          <div className="w-px h-8 bg-white/10" />
           <div>
             <p className="text-white font-semibold text-sm">Digital Sustainability for Jordanian Communities</p>
             <p className="text-slate-500 text-xs">Project Proposal · Jordan {year}</p>

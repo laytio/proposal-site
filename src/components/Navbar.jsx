@@ -25,11 +25,13 @@ export default function Navbar() {
       scrolled ? 'bg-[#0a0f1e]/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-white/5' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center">
-            <span className="text-white font-bold text-sm">DS</span>
-          </div>
-          <span className="text-white font-semibold text-sm hidden sm:block">Digital Sustainability</span>
+        <a href="#hero" className="flex items-center">
+          <img
+            src="/hfp-logo.png"
+            alt="Al-Hussein Fellowship — Crown Prince Foundation"
+            className="h-10 w-auto object-contain"
+            style={{ filter: 'brightness(0) invert(1)' }}
+          />
         </a>
 
         {/* Desktop */}

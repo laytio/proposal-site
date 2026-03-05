@@ -11,6 +11,18 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <div className="px-6 py-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <img
+              src="/hfp-logo.png"
+              alt="Al-Hussein Fellowship — Crown Prince Foundation"
+              className="h-16 w-auto object-contain"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
+          </div>
+        </div>
+
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-sm font-medium mb-8">
           <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
