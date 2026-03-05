@@ -16,8 +16,7 @@ export default function Hero() {
           <img
             src="/hfp-logo.png"
             alt="Al-Hussein Fellowship — Crown Prince Foundation"
-            className="h-20 w-auto object-contain"
-            style={{ mixBlendMode: 'screen' }}
+            className="h-28 w-auto object-contain"
           />
         </div>
 

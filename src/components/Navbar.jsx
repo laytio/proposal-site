@@ -29,8 +29,7 @@ export default function Navbar() {
           <img
             src="/hfp-logo.png"
             alt="Al-Hussein Fellowship — Crown Prince Foundation"
-            className="h-10 w-auto object-contain"
-            style={{ mixBlendMode: 'screen' }}
+            className="h-12 w-auto object-contain"
           />
         </a>
 

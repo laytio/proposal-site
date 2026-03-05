@@ -7,8 +7,7 @@ export default function Footer() {
           <img
             src="/hfp-logo.png"
             alt="Al-Hussein Fellowship — Crown Prince Foundation"
-            className="h-10 w-auto object-contain"
-            style={{ mixBlendMode: 'screen' }}
+            className="h-12 w-auto object-contain"
           />
           <div className="w-px h-8 bg-white/10" />
           <div>
