@@ -8,12 +8,12 @@ export default function Footer() {
             src="/hfp-logo.png"
             alt="Al-Hussein Fellowship — Crown Prince Foundation"
             className="h-10 w-auto object-contain"
-            style={{ filter: 'brightness(0) invert(1)' }}
+            style={{ mixBlendMode: 'screen' }}
           />
           <div className="w-px h-8 bg-white/10" />
           <div>
             <p className="text-white font-semibold text-sm">Digital Sustainability for Jordanian Communities</p>
-            <p className="text-slate-500 text-xs">Project Proposal · Jordan {year}</p>
+            <p className="text-slate-500 text-xs">Project Proposal · Jordan 2026</p>
           </div>
         </div>
 
